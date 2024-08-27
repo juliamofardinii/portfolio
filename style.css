@@ -17,9 +17,9 @@
 }
 
 body {
-    box-sizing: border-box;
     background-color: var(--cor-primaria);
-    color: var(--cor-secundaria); }
+    color: var(--cor-secundaria);
+}
 
 .flex {
     display: flex;
@@ -112,7 +112,7 @@ section.topo-do-site {
 section.topo-do-site.flex {
     align-items: center;
     justify-content: center;
-    gap: 90 px;
+    gap: 90px;
 }
 
 .topo-do-site h1 {
@@ -133,14 +133,13 @@ section.topo-do-site.flex {
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--fonte-secundaria);
     font-style: normal;
     color: var(--cor-secundaria);
     margin: 10px 0;
     padding-right: 50px;
     padding-left: 10px;
-    font-size: 20px;
 }
 
 .txt-topo-site {
@@ -162,11 +161,9 @@ section.topo-do-site.flex {
     0% {
         transform: rotate(0deg);
     }
-
     50% {
         transform: rotate(20deg);
     }
-
     100% {
         transform: rotate(0deg);
     }
@@ -241,9 +238,12 @@ section.portfolio .titulo {
 
 section.portfolio .flex {
     display: flex;
-    gap: 70px;
+    gap: 30px;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap; 
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .img-port {
@@ -255,10 +255,15 @@ section.portfolio .flex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:   
- 0px;
+    padding: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    margin: 0 auto;
+}
+
+.img-port:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(90, 88, 88, 0.5);
 }
 
 .img-projeto {
@@ -305,7 +310,7 @@ button i {
     font-style: normal;
     font-size: 18px;
     color: var(--cor-secundaria);
-    margin-top: -10
+    margin-top: -10px;
 }
 
 .titulo-projeto h4 {
@@ -328,7 +333,7 @@ a {
     box-shadow: 0 0 20px rgba(90, 88, 88, 0.5);
 }
 
-/*ESTILO DO RODAPÉ*/
+/* ESTILO DO RODAPÉ */
 footer {
     padding: 40px 4%;
 }
@@ -359,6 +364,7 @@ footer .line-footer p a {
 footer {
     font-family: var(--fonte-primaria);
 }
+
 @media screen and (max-width: 768px) {
     /* CABEÇALHO */
     .menu-desktop {
@@ -387,7 +393,7 @@ footer {
     section.topo-do-site {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centraliza os itens */
+        align-items: center;
         padding: 0 auto;
         box-sizing: border-box;
     }
@@ -398,7 +404,6 @@ footer {
         box-sizing: border-box;
     }
 
-
     .img-topo-site {
         width: 90%;
         display: flex;
@@ -406,9 +411,8 @@ footer {
     }
 
     .topo-do-site .img-topo-site img {
-        width: 50rem;
-        max-height: 200px;
-        max-width: 200px;
+        width: 200px;
+        height: 200px;
         margin-top: 10px;
     }
 
@@ -440,7 +444,6 @@ footer {
 
     .habilidades .habilidades-box {
         width: 90%;
-        
         max-width: 200px;
     }
 
@@ -456,15 +459,9 @@ footer {
         box-sizing: border-box;
     }
 
-    .img-port {
-        width: 90%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
     .img-projeto img {
         width: 200px;
-        height: 120px;
+        height: auto; 
         border-radius: 10px;
         margin-bottom: 10px;
     }
@@ -492,7 +489,7 @@ footer {
         font-size: 12px;
     }
 
-    footer{
+    footer {
         padding: 5px;
     }
 
