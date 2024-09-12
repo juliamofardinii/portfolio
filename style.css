@@ -271,11 +271,12 @@ section.portfolio .flex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 8px;
 }
 
 .img-port:hover {
@@ -289,13 +290,12 @@ section.portfolio .flex {
     height: 150px;
     border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 10px;
+    padding: 2px;
 }
 
 .btn-container {
     display: flex;
     gap: 10px;
-    margin: 10px;
     justify-content: flex-end;
     position: relative;
 
@@ -305,7 +305,6 @@ button {
     background: var(--cor-terciaria);
     border: none;
     color: white;
-    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
@@ -313,6 +312,7 @@ button {
     height: 40px;
     justify-content: center;
     position: relative;
+   
 }
 
 button i {
@@ -333,10 +333,11 @@ button i {
     font-style: normal;
     font-size: 14px;
     color: #333333e5;
+    margin: 1em;
 }
 
 .titulo-projeto {
-    padding: 15px;
+    padding: 10px;
 }
 
 a {
