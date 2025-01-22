@@ -236,9 +236,7 @@ section.habilidades .flex {
 /* ESTILO PROJETOS */
 
 section.portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-content: center;
     padding: 0 10px;
     box-sizing: border-box;
 }
@@ -263,23 +261,21 @@ section.portfolio .flex {
     padding: 1rem;
     border-radius: 0.6rem;
     font-size: 15px;
+    
 }
 
 .img-port {
-    width: 310px;
-    height: 350px;
+    flex-basis: 30%; /* Define o tamanho inicial do item como 30% */
+    height: 400px; /* Defina uma altura fixa */
     background-color: #fff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch; /* Garante que os itens se estiquem para a mesma altura */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 8px;
 }
 
 .img-port:hover {
@@ -289,18 +285,22 @@ section.portfolio .flex {
 
 
 .img-projeto img {
-    width: 250px;
+    max-width: 250px;
+    width: 100%; /* Força a imagem a ocupar a largura máxima permitida */
     height: 150px;
     border-radius: 10px;
     object-fit: cover;
     padding: 2px;
 }
 
+
 .btn-container {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
     position: relative;
+    padding-right: 10px;
+   
 
 }
 
@@ -323,12 +323,22 @@ button i {
     font-size: 14px;
 }
 
+.titulo-projeto {
+    padding: 10px;
+    height: 100px; /* Define a altura fixa para o espaço do título */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que os elementos dentro do título sejam espaçados uniformemente */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse o limite do contêiner */
+}
+
 .titulo-projeto h3 {
     font-family: var(--fonte-secundaria);
     font-style: normal;
     font-size: 18px;
     color: var(--cor-secundaria);
-    margin-top: -10px;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 .titulo-projeto h4 {
@@ -336,11 +346,10 @@ button i {
     font-style: normal;
     font-size: 14px;
     color: #333333e5;
-    margin: 1em;
-}
-
-.titulo-projeto {
-    padding: 10px;
+    padding: 5px;
+    margin-top: 0;
+   
+    
 }
 
 a {
@@ -393,7 +402,8 @@ footer {
 
     /* CLASSES GERAIS */
     .flex {
-        flex-direction: column;    }
+        flex-direction: column;
+    }
 
     h2.titulo {
         font-size: 16px;
@@ -408,7 +418,6 @@ footer {
     }
 
     /* TOPO DO SITE */
-
     section.topo-do-site {
         display: flex;
         flex-direction: column;
@@ -486,8 +495,7 @@ footer {
 
     section.portfolio .flex {
         display: flex;
-        flex-wrap: wrap-reverse;
-        align-items: center;
+        justify-content: center;
         gap: 30px;
         width: 100%;
         max-width: 100%;
@@ -496,6 +504,50 @@ footer {
         border-radius: 0.6rem;
         font-size: 15px;
     }
+
+    .img-port {
+        height: 350px; /* Define uma altura fixa */
+        max-width: 350px;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch; /* Garante que todos os itens se estiquem para a mesma altura */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        min-height: 350px; /* Define altura mínima para garantir que todos os itens tenham o mesmo tamanho */
+    }
+
+    .img-port .titulo-projeto {
+        flex-grow: 1; /* Faz com que o conteúdo ocupe o máximo de espaço disponível */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Alteração para as imagens do projeto */
+    .img-projeto img {
+        width: 100%; /* Faz as imagens ocuparem toda a largura do item */
+        max-height: 150px;
+        object-fit: cover;
+        padding: 2px;
+    }
+
+    .btn-container{
+        display: flex;
+        justify-content: center; /* Centraliza os itens no eixo horizontal */
+        align-items: center; /* Centraliza os itens no eixo vertical, se necessário */
+        width: 100%; /* Garante que o container ocupe toda a largura disponível */
+        padding: 10px 0;
+    }
+
+    button {
+        margin: 0 auto; /* Centraliza o botão dentro do container */
+        display: block; /* Garante que o botão tenha comportamento de bloco */
+    }
+    
 
     /* RODAPÉ */
     footer .flex {
