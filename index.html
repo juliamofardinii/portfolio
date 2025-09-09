@@ -1,242 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- FIM BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>PortfolioJM</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="interface">
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#portfolio">Projetos</a></li>
-                </ul>
-            </nav>
-        </div><!-- .interface -->
+      <div class="interface">
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+      <section class="topo-do-site" id="inicio">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>Olá, <span class="emoji-aceno">👋</span></h1>
+              <h2>Eu sou a <strong class="titulo-destaque">Júlia</strong>!</h2>
+              <p class="apresentacao__conteudo__paragrafo">
+                Sou apaixonada por criar experiências digitais intuitivas e
+                funcionais. Gosto de transformar ideias em soluções que
+                facilitem a vida das pessoas e tragam resultados reais.
+              </p>
 
-        <section class="topo-do-site" id="inicio">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>Olá, <span class="emoji-aceno">👋</span></h1>
-                        <h2>Eu sou a <strong class="titulo-destaque">Júlia</strong>!</h2>
-                        <p class="apresentacao__conteudo__paragrafo">Tenho 22 anos, sou formada em Administração de
-                            Empresas e hoje estou cursando Análise e Desenvolvimento de Sistemas.</p>
-                        <p class="apresentacao__conteudo__paragrafo">Atualmente, trabalho com front-end e estou sempre em busca de aprimorar minhas habilidades.</p>
-                        <div class="btn-social">
-                            <a href="https://wa.me/+5515981538018"><button><i class="bi bi-whatsapp"></i></button></a>
-                            <a href="https://www.linkedin.com/in/j%C3%BAlia-mofardini-02bb5b176/"><button><i
-                                        class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/juliamofardinii"><button><i
-                                        class="bi bi-github"></i></button></a>
-                        </div><!-- .btn-social -->
-                    </div><!-- .txt-topo-site -->
-                    <div class="img-topo-site">
-                        <img src="./images/juliamofardini.png" alt="Imagem da Júlia">
-                    </div><!-- .img-topo-site -->
-                </div><!-- .flex -->
-            </div><!-- .interface -->
-        </section><!-- .topo-do-site -->
+              <div class="btn-social">
+                <a href="https://wa.me/+5515981538018"
+                  ><button><i class="bi bi-whatsapp"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/j%C3%BAlia-mofardini-02bb5b176/"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/juliamofardinii"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+            </div>
+            <div class="img-topo-site">
+              <img src="./images/juliamofardini.png" alt="Imagem da Júlia" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="habilidades" id="habilidades">
-            <div class="interface">
-                <h2 class="titulo">MINHAS <span>HABILIDADES</span></h2>
-                <div class="flex">
-                    <div class="habilidades-box">
-                        <img src="images/js.png" alt="Power Apps">
-                        <h3>JavaScript</h3>
-                    </div><!-- .habilidades-box -->
+      <section class="habilidades" id="habilidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>HABILIDADES</span></h2>
+          <div class="flex">
+            <div class="habilidades-box">
+              <img src="images/ts.png" alt="Power Apps" />
+              <h3>TypeScript</h3>
+            </div>
+            <div class="habilidades-box">
+              <img src="images/js.png" alt="Power Apps" />
+              <h3>JavaScript</h3>
+            </div>
 
-                    <div class="habilidades-box">
-                        <img src="images/html-5.png" alt="Power Apps">
-                        <h3>HTML</h3>
-                    </div><!-- .habilidades-box -->
+            <div class="habilidades-box">
+              <img src="images/react.png" alt="Power Apps" />
+              <h3>React e React Native</h3>
+            </div>
 
-                    <div class="habilidades-box">
-                        <img src="images/css.png" alt="Power Apps">
-                        <h3>CSS</h3>
-                    </div><!-- .habilidades-box -->
+            <div class="habilidades-box">
+              <img src="images/tailwind.png" alt="Tailwind" />
+              <h3>Tailwind</h3>
+            </div>
 
-                    <div class="habilidades-box">
-                        <img src="images/react.png" alt="Power Apps">
-                        <h3>React</h3>
-                    </div><!-- .habilidades-box -->
+            <div class="habilidades-box">
+              <i class="bi bi-bootstrap"></i>
+              <h3>Bootstrap</h3>
+            </div>
 
-                    <div class="habilidades-box">
-                        <img src="images/banco-dados.png" alt="Power Apps">
-                        <h3>MySQL</h3>
-                    </div><!-- .habilidades-box -->
+            <div class="habilidades-box">
+              <img src="images/html-5.png" alt="Power Apps" />
+              <h3>HTML</h3>
+            </div>
 
-                    <div class="habilidades-box">
-                        <img src="images/ts.png" alt="Power Apps">
-                        <h3>TypeScript</h3>
-                    </div><!-- .habilidades-box -->
+            <div class="habilidades-box">
+              <img src="images/css.png" alt="Power Apps" />
+              <h3>CSS</h3>
+            </div>
 
-                    <div class="habilidades-box">
-                        <i class="bi bi-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                    </div><!-- .habilidades-box -->
+            <div class="habilidades-box">
+              <img src="images/banco-dados.png" alt="Power Apps" />
+              <h3>SQLite</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                   
-                </div><!-- .flex -->
-            </div><!-- .interface -->
-        </section><!-- .habilidades -->
+      <section class="portfolio" id="portfolio">
+        <div class="interface">
+          <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+          <div class="flex">
+            <div class="img-port">
+              <div class="titulo-projeto">
+                <h3>Site beAba</h3>
+                <h4>
+                  Desenvolvido com NextJs, TypeScript, Tailwind e ShadcnUI
+                </h4>
+              </div>
+              <div class="img-projeto">
+                <img src="images/beAba.png" alt="Jogo Número Secreto" />
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn-demo"
+                  href="https://jogo-numero-secreto-gbyi.vercel.app/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-laptop"></i>Demo</button>
+                </a>
+                <a
+                  class="btn-git"
+                  href="https://github.com/juliamofardinii/jogo-numero-secreto"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-github"></i>Repositório</button>
+                </a>
+              </div>
+            </div>
 
-        <section class="portfolio" id="portfolio">
-            <div class="interface">
-                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
-                <div class="flex">
-                    <div class="img-port">
-                        <div class="titulo-projeto">
-                            <h3>Jogo Número Secreto</h3>
-                            <h4>Desenvolvido com HTML, CSS e JavaScript</h4>
-                        </div>
-                        <div class="img-projeto">
-                            <img src="images/numero secreto.png" alt="Jogo Número Secreto">
-                        </div>
-                        <div class="btn-container">
-                            <a class="btn-demo" href="https://jogo-numero-secreto-gbyi.vercel.app/" target="_blank">
-                                <button><i class="bi bi-laptop"></i>Demo</button>
-                            </a>
-                            <a class="btn-git" href="https://github.com/juliamofardinii/jogo-numero-secreto" target="_blank">
-                                <button><i class="bi bi-github"></i>Repositório</button>
-                            </a>
-                        </div><!-- .btn-container -->
-                        <!-- .img-projeto -->
-                    </div><!-- .img-port -->
+            <div class="img-port">
+              <div class="titulo-projeto">
+                <h3>Site Rick and Morty</h3>
+                <h4>
+                  Desenvolvido com React, TypeScript, Sass e Biblioteca Axios
+                </h4>
+              </div>
+              <div class="img-projeto">
+                <img src="images/rick-and-morty.png" alt="Rick and Morty" />
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn-demo"
+                  href="https://juliamofardinii.github.io/rick-and-morty/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-laptop"></i>Demo</button>
+                </a>
+                <a
+                  class="btn-git"
+                  href="https://github.com/juliamofardinii/rick-and-morty?tab=readme-ov-file"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-github"></i>Repositório</button>
+                </a>
+              </div>
+            </div>
 
-                    <div class="img-port">
-                        <div class="titulo-projeto">
-                            <h3>To-do List com Dark Mode</h3>
-                            <h4>Desenvolvido com HTML, CSS e JavaScript</h4>
-                        </div>
-                        <div class="img-projeto">
-                            <img src="images/todolist.png" alt="To-do List com Dark Mode">
-                        </div>
-                        <div class="btn-container">
-                            <a class="btn-demo" href="https://to-do-list-red-theta-84.vercel.app/" target="_blank">
-                                <button><i class="bi bi-laptop"></i>Demo</button>
-                            </a>
-                            <a class="btn-git" href="https://github.com/juliamofardinii/to-do-list" target="_blank"> 
-                                <button><i class="bi bi-github"></i>Repositório</button>
-                            </a>
-                        </div><!-- .btn-container -->
-                        <!-- .img-projeto -->
-                    </div><!-- .img-port -->
+            <div class="img-port">
+              <div class="titulo-projeto">
+                <h3>Site Meteora</h3>
+                <h4>Desenvolvido com JavaScript, HTML, CSS e Bootstrap</h4>
+              </div>
+              <div class="img-projeto">
+                <img
+                  src="images/site-meteora.png"
+                  alt="To-do List com Dark Mode"
+                />
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn-demo"
+                  href="https://juliamofardinii.github.io/site-meteora/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-laptop"></i>Demo</button>
+                </a>
+                <a
+                  class="btn-git"
+                  href="https://github.com/juliamofardinii/site-meteora"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-github"></i>Repositório</button>
+                </a>
+              </div>
+            </div>
 
-                    <div class="img-port">
-                        <div class="titulo-projeto">
-                            <h3>Site Verb Tenses World</h3>
-                            <h4>Desenvolvido com JavaScript, HTML e CSS</h4>
-                        </div>
-                        <div class="img-projeto">
-                            <img src="images/site-verb-tenses.png" alt="Imagem site Verb Tenses ">
-                        </div>
-                        <div class="btn-container">
-                            <a class="btn-demo" href="https://juliamofardinii.github.io/site-verb-tenses/" target="_blank">
-                                <button><i class="bi bi-laptop"></i>Demo</button>
-                            </a>
-                            <a class="btn-git" href="https://github.com/juliamofardinii/site-verb-tenses" target="_blank">
-                                <button><i class="bi bi-github"></i>Repositório</button>
-                            </a>
-                        </div><!-- .btn-container -->
-                        <!-- .img-projeto -->
-                    </div><!-- .img-port -->
+            <div class="img-port">
+              <div class="titulo-projeto">
+                <h3>Site AluraBook</h3>
+                <h4>Desenvolvido com HTML e CSS</h4>
+              </div>
+              <div class="img-projeto">
+                <img
+                  src="images/alurabook.png"
+                  alt="Umagem do site AluraBook"
+                />
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn-demo"
+                  href="https://juliamofardinii.github.io/alurabook/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-laptop"></i>Demo</button>
+                </a>
+                <a
+                  class="btn-git"
+                  href="https://github.com/juliamofardinii/alurabook"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-github"></i>Repositório</button>
+                </a>
+              </div>
+            </div>
 
-                    <div class="img-port">
-                        <div class="titulo-projeto">
-                            <h3>Site Meteora</h3>
-                            <h4>Desenvolvido com JavaScript, HTML, CSS e Bootstrap</h4>
-                        </div>
-                        <div class="img-projeto">
-                            <img src="images/site-meteora.png" alt="To-do List com Dark Mode">
-                        </div>
-                        <div class="btn-container">
-                            <a class="btn-demo" href="https://juliamofardinii.github.io/site-meteora/" target="_blank">
-                                <button><i class="bi bi-laptop"></i>Demo</button>
-                            </a>
-                            <a class="btn-git" href="https://github.com/juliamofardinii/site-meteora" target="_blank">
-                                <button><i class="bi bi-github"></i>Repositório</button>
-                            </a>
-                        </div><!-- .btn-container -->
-                        <!-- .img-projeto -->
-                    </div><!-- .img-port -->
+            <div class="img-port">
+              <div class="titulo-projeto">
+                <h3>To-do List com Dark Mode</h3>
+                <h4>Desenvolvido com HTML, CSS e JavaScript</h4>
+              </div>
+              <div class="img-projeto">
+                <img src="images/todolist.png" alt="To-do List com Dark Mode" />
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn-demo"
+                  href="https://to-do-list-red-theta-84.vercel.app/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-laptop"></i>Demo</button>
+                </a>
+                <a
+                  class="btn-git"
+                  href="https://github.com/juliamofardinii/to-do-list"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-github"></i>Repositório</button>
+                </a>
+              </div>
+            </div>
 
-                    <div class="img-port">
-                        <div class="titulo-projeto">
-                            <h3>Site AluraBook</h3>
-                            <h4>Desenvolvido com HTML e CSS</h4>
-                        </div>
-                        <div class="img-projeto">
-                            <img src="images/alurabook.png" alt="Umagem do site AluraBook">
-                        </div>
-                        <div class="btn-container">
-                            <a class="btn-demo" href="https://juliamofardinii.github.io/alurabook/" target="_blank">
-                                <button><i class="bi bi-laptop"></i>Demo</button>
-                            </a>
-                            <a class="btn-git" href="https://github.com/juliamofardinii/alurabook" target="_blank">
-                                <button><i class="bi bi-github"></i>Repositório</button>
-                            </a>
-                        </div><!-- .btn-container -->
-                        <!-- .img-projeto -->
-                    </div><!-- .img-port -->
-
-                    <div class="img-port">
-                        <div class="titulo-projeto">
-                            <h3>Site Rick and Morty</h3>
-                            <h4>Desenvolvido com React, TypeScript, Sass e Biblioteca Axios</h4>
-                        </div>
-                        <div class="img-projeto">
-                            <img src="images/rick-and-morty.png" alt="Rick and Morty">
-                        </div>
-                        <div class="btn-container">
-                            <a class="btn-demo" href="https://juliamofardinii.github.io/rick-and-morty/" target="_blank">
-                                <button><i class="bi bi-laptop"></i>Demo</button>
-                            </a>
-                            <a class="btn-git" href="https://github.com/juliamofardinii/rick-and-morty?tab=readme-ov-file" target="_blank">
-                                <button><i class="bi bi-github"></i>Repositório</button>
-                            </a>
-                        </div><!-- .btn-container -->
-                        <!-- .img-projeto -->
-                    </div><!-- .img-port -->
-
-                </div><!-- .flex -->
-            </div><!-- .interface -->
-        </section><!-- .portfolio -->
+            <div class="img-port">
+              <div class="titulo-projeto">
+                <h3>Site Verb Tenses World</h3>
+                <h4>Desenvolvido com JavaScript, HTML e CSS</h4>
+              </div>
+              <div class="img-projeto">
+                <img
+                  src="images/site-verb-tenses.png"
+                  alt="Imagem site Verb Tenses "
+                />
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn-demo"
+                  href="https://juliamofardinii.github.io/site-verb-tenses/"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-laptop"></i>Demo</button>
+                </a>
+                <a
+                  class="btn-git"
+                  href="https://github.com/juliamofardinii/site-verb-tenses"
+                  target="_blank"
+                >
+                  <button><i class="bi bi-github"></i>Repositório</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="btn-social">
-                        <a href="https://wa.me/+5515981538018"><button><i class="bi bi-whatsapp"></i></button></a>
-                        <a href="https://www.linkedin.com/in/j%C3%BAlia-mofardini-02bb5b176/"><button><i
-                                    class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/juliamofardinii"><button><i class="bi bi-github"></i></button></a>
-                    </div><!-- .btn-social -->
-                </div><!-- .flex -->
-            </div><!-- .line-footer -->
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i><a href="mailto:juliamofardini@hotmail.com">
-                        juliamofardini@hotmail.com</a>
-                </p>
-            </div><!-- .line-footer -->
-        </div><!-- .interface -->
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="btn-social">
+              <a href="https://wa.me/+5515981538018"
+                ><button><i class="bi bi-whatsapp"></i></button
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/j%C3%BAlia-mofardini-02bb5b176/"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a href="https://github.com/juliamofardinii"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i
+            ><a href="mailto:juliamofardini@hotmail.com">
+              juliamofardini@hotmail.com</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
