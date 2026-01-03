@@ -2,7 +2,7 @@
 
 :root {
   --cor-primaria: #f5f5f5;
-  --cor-secundaria: #20262e;
+  --cor-secundaria: #2e2e2e;
   --cor-terciaria: #85586f;
   --cor-hover: #dad8d8;
 
@@ -264,7 +264,7 @@ section.portfolio .flex {
 }
 
 .img-port {
-  flex-basis: 30%; /* Define o tamanho inicial do item como 30% */
+  width: 18rem; /* Define o tamanho inicial do item como 30% */
   height: 400px; /* Defina uma altura fixa */
   background-color: #fff;
   border-radius: 20px;
@@ -294,11 +294,8 @@ section.portfolio .flex {
 }
 
 .btn-container {
-  display: flex;
   gap: 10px;
-  justify-content: flex-end;
-  position: relative;
-  padding-right: 10px;
+  justify-items: center;
 }
 
 button {
